@@ -4,6 +4,7 @@ import  './config/dotenv.js'
 
 const app = express();
 
+app.use(express.json())
 app.use("/public", express.static("./public"));
 app.use('/gifts', giftsRouter);
 
